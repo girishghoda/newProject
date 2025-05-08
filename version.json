@@ -1,9 +1,9 @@
 {
   "projectName": "CUSTOM",
-  "latestVersionDirectory": "1.0.7",
-  "latestVersionNumber": 8,
+  "latestVersionDirectory": "1.0.8",
+  "latestVersionNumber": 9,
   "currentVersionDirectory": "/interplay_v2/flows/projects/CUSTOM/",
-  "currentVersionNumber": 9,
+  "currentVersionNumber": 10,
   "versionList": [
     {
       "versionNumber": 1,
@@ -83,6 +83,19 @@
       "timeStamp": "2025-05-08T09:37:03.662Z",
       "username": "utsav.shah@ajmerainfotech.com",
       "previousCurrentVersion": 8,
+      "listOfNodes": [
+        "node-red/debug",
+        "node-red/http2in",
+        "node-red/function"
+      ]
+    },
+    {
+      "versionNumber": 9,
+      "displayText": "Authentication Deploy",
+      "directoryName": "1.0.8",
+      "timeStamp": "2025-05-08T09:54:35.628Z",
+      "username": "UNDEFINED",
+      "previousCurrentVersion": 9,
       "listOfNodes": [
         "node-red/debug",
         "node-red/http2in",
