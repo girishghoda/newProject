@@ -16,8 +16,8 @@
         "timeout": 10000,
         "newThread": false,
         "noerr": 0,
-        "x": 430,
-        "y": 200,
+        "x": 330,
+        "y": 140,
         "wires": [
             []
         ]
