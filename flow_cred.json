@@ -14,7 +14,7 @@
             "mutualTls": false,
             "ssl": false,
             "selfsigned": false,
-            "localServer": false
+            "localServer": true
         }
     }
 }
