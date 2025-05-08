@@ -48,8 +48,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 150,
-        "y": 60,
+        "x": 110,
+        "y": 120,
         "wires": [
             [
                 "3ef96c20.d9a194"
