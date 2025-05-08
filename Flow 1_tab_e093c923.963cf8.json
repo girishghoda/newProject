@@ -11,7 +11,7 @@
         "type": "function",
         "z": "e093c923.963cf8",
         "name": "",
-        "func": "var require = context.global.get('require'); \n\nreturn msg;",
+        "func": "var require = context.global.get('require'); \nmsg.payload = {message: \"Hi\"}\nreturn msg;",
         "outputs": 1,
         "timeout": 10000,
         "newThread": false,
