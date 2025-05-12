@@ -1,0 +1,117 @@
+[
+    {
+        "id": "e093c923.963cf8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6dbf0194.dd3fe8",
+        "type": "function",
+        "z": "e093c923.963cf8",
+        "name": "",
+        "func": "var require = context.global.get('require'); \nmsg.payload = {message: \"Hi\"}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 10000,
+        "newThread": false,
+        "noerr": 0,
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "68317a13.d75dbc"
+            ]
+        ]
+    },
+    {
+        "id": "c118cd0.70c3c3",
+        "type": "http2 in",
+        "z": "e093c923.963cf8",
+        "name": "",
+        "url": "/get",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "6dbf0194.dd3fe8"
+            ]
+        ]
+    },
+    {
+        "id": "68317a13.d75dbc",
+        "type": "console",
+        "z": "e093c923.963cf8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 620,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a00072d7.d0be08",
+        "type": "subflow:f8a98029.02df2",
+        "z": "e093c923.963cf8",
+        "x": 300,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f8a98029.02df2",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "f9ed9de.500e5e",
+        "type": "gRPC Server In",
+        "z": "f8a98029.02df2",
+        "name": "",
+        "server": "c6a655e7.e74bf8",
+        "service": "",
+        "method": "",
+        "x": 640,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b66e7021.b854f",
+        "type": "gRPC Server Out",
+        "z": "f8a98029.02df2",
+        "name": "",
+        "x": 1040,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "3329c4.0cea1e3c",
+        "type": "gRPC Client Request",
+        "z": "f8a98029.02df2",
+        "name": "",
+        "server": "c6a655e7.e74bf8",
+        "service": "",
+        "method": "",
+        "compress": true,
+        "decompress": true,
+        "connectTimeout": 0,
+        "timeout": 0,
+        "chain": "",
+        "key": "",
+        "x": 900,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    }
+]

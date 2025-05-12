@@ -1,0 +1,70 @@
+[
+    {
+        "id": "7defe8a9.792938",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3ef96c20.d9a194",
+        "type": "function",
+        "z": "7defe8a9.792938",
+        "name": "",
+        "func": "var require = context.global.get('require'); \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 10000,
+        "newThread": false,
+        "noerr": 0,
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "bcaabd7a.c504a8",
+                "54861746.8e9a5"
+            ]
+        ]
+    },
+    {
+        "id": "bcaabd7a.c504a8",
+        "type": "console",
+        "z": "7defe8a9.792938",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "eeb80ad9.e87d",
+        "type": "http in",
+        "z": "7defe8a9.792938",
+        "name": "",
+        "url": "/new",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "3ef96c20.d9a194"
+            ]
+        ]
+    },
+    {
+        "id": "54861746.8e9a5",
+        "type": "http response",
+        "z": "7defe8a9.792938",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 540,
+        "y": 200,
+        "wires": []
+    }
+]
